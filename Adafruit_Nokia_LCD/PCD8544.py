@@ -169,7 +169,7 @@ class PCD8544(object):
 
 	def clear(self):
 		"""Clear contents of image buffer."""
-		self._buffer = [0] * (LCDWIDTH * LCDHEIGHT / 8)
+		self._buffer = [0] * int(LCDWIDTH * LCDHEIGHT / 8)
 
 	def set_contrast(self, contrast):
 		"""Set contrast to specified value (should be 0-127)."""
