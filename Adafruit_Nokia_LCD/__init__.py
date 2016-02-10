@@ -1,1 +1,1 @@
-from PCD8544 import *
+from .PCD8544 import *
